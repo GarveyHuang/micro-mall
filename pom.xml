@@ -26,7 +26,7 @@
         <java.version>1.8</java.version>
 
         <!-- 工具类相关 -->
-        <org.projectlombok.version>1.16.14</org.projectlombok.version>
+        <org.projectlombok.version>1.18.22</org.projectlombok.version>
         <org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
     </properties>
 

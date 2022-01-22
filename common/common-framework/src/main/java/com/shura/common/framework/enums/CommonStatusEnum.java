@@ -1,20 +1,14 @@
 package com.shura.common.framework.enums;
 
-import com.shura.common.framework.core.IntArrayValuable;
-
-import java.util.Arrays;
-
 /**
  * @Author Garvey
  * @Created 2022/1/22
  * @Description 通用状态值枚举
  */
-public enum CommonStatusEnum implements IntArrayValuable {
+public enum CommonStatusEnum {
 
     ENABLE(1, "启用"),
     DISABLE(2, "禁用");
-
-    public static final int[] ARRAYS = Arrays.stream(values()).mapToInt(CommonStatusEnum::getStatus).toArray();
 
     /**
      * 状态值
@@ -37,11 +31,5 @@ public enum CommonStatusEnum implements IntArrayValuable {
 
     public String getName() {
         return name;
-    }
-
-
-    @Override
-    public int[] array() {
-        return ARRAYS;
     }
 }
